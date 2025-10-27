@@ -4,6 +4,7 @@ import profileImg2 from '../img/profile2.PNG';
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
 import BackToTopButton from '../components/BackToTopButton';
 import CardProject from './CardProject';
+import CardTags from '../components/CardTags';
 
 export default function Hero() {
   
@@ -35,26 +36,35 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Sobre mim</h2>
           <p className="text-neutral-dark mb-4">
-            Olá, eu sou o Eduardo. Tenho 41 anos, sou paulistano da zona sul e apaixonado por pets, fotografia, ciclismo e música — minha playlist está sempre crescendo para acompanhar minhas pedaladas.<br /><br />
+            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
 
             Este portfólio está em constante evolução, com novos projetos sendo adicionados. Para conversar ou saber mais, é só me chamar pelas redes sociais ou enviar um e-mail <a href="mailto:eduardo@edilo.com.br" className="text-secondary underline">eduardo@edilo.com.br</a>.
           </p>
+
+        <section className="max-w-4xl w-full mb-8">
+          <CardTags />
+        </section>
+
         </div>
       </section>
 
       {/* Section Intro Projetos */}
       <section id="intro-projetos" className="py-16 px-4 bg-primary">
         <div className="max-w-4xl mx-auto text-left">
-          <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Projetos</h2>
-          <p className="text-neutral-dark mb-4">
-            Aqui estão alguns dos meus projetos mais recentes, onde busquei aplicar as melhores práticas de design e desenvolvimento.
-          </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-        <CardProject />
-        <CardProject />
-        <CardProject />
-      </div>
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
+                    
+            <div className="md:w-1/3 w-full flex justify-center">
+              <CardProject />
+            </div>            
+                       
+            <div className="md:w-1/2 w-full">
+              <p className="text-dark mb-4">
+                Aqui estão alguns dos meus projetos mais recentes, onde busquei aplicar as melhores práticas de design e desenvolvimento.
+              </p>
+            </div>
+
+          </div>
 
         </div>
       </section>
