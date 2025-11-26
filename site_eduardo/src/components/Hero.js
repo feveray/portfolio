@@ -35,14 +35,14 @@ export default function Hero() {
       <section id="mini-sobre" className="py-16 px-4 bg-neutral-light">
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Sobre mim</h2>
-          <p className="text-neutral-dark mb-4">
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
-
-            Este portfólio está em constante evolução, com novos projetos sendo adicionados. Para conversar ou saber mais, é só me chamar pelas redes sociais ou enviar um e-mail <a href="mailto:eduardo@edilo.com.br" className="text-secondary underline">eduardo@edilo.com.br</a>.
+          <p className="text-neutral-dark mb-4 text-justify">
+            Profissional com formação em Design de Web e certificação em UX Design pelo Google, em transição para UI/UX e front-end. Comprometido com experiências digitais que reflitam diversidade e representatividade. Meu objetivo é transformar necessidades reais em interfaces claras, funcionais e centradas no ponto de contato entre usuário e produto.
           </p>
 
         <section className="max-w-4xl w-full mb-8">
-          <CardTags />
+          <div className="mx-auto w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
+            <CardTags />
+          </div>
         </section>
 
         </div>
@@ -52,16 +52,19 @@ export default function Hero() {
       <section id="intro-projetos" className="py-16 px-4 bg-primary">
         <div className="max-w-4xl mx-auto text-left">
 
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
-                    
-            <div className="md:w-1/3 w-full flex justify-center">
-              <CardProject />
-            </div>            
-                       
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-0">
+
             <div className="md:w-1/2 w-full">
               <p className="text-dark mb-4">
                 Aqui estão alguns dos meus projetos mais recentes, onde busquei aplicar as melhores práticas de design e desenvolvimento.
               </p>
+              <p className="text-dark mb-4">
+                Este portfólio está em constante evolução, com novos projetos sendo adicionados.
+              </p>
+            </div>
+
+            <div className="md:w-1/3 w-full flex justify-center">
+              <CardProject />
             </div>
 
           </div>

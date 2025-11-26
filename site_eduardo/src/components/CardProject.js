@@ -39,16 +39,17 @@ const StyledWrapper = styled.div`
   }
 
   .article-wrapper:hover {
+    /* sombras deslocadas para a esquerda (ficam "atrás" quando o card sobe e vai para a direita) */
     -webkit-box-shadow:
-      10px 10px 0 #aabf91,
-      20px 20px 0 rgba(147, 104, 141, 1);
+      -10px 10px 0 #aabf91,
+      -20px 20px 0 rgba(147, 104, 141, 1);
     box-shadow:
-      10px 10px 0 #aabf91,
-      20px 20px 0 rgba(147, 104, 141, 1);
-    border-color: #51572c;
-    -webkit-transform: translate(-20px, -20px);
-    -ms-transform: translate(-20px, -20px);
-    transform: translate(-20px, -20px);
+      -10px 10px 0 #aabf91,
+      -20px 20px 0 rgba(147, 104, 141, 1);
+    border-color: #31572c;
+    -webkit-transform: translate(20px, -20px); /* sobe e vai para a direita */
+    -ms-transform: translate(20px, -20px);
+    transform: translate(20px, -20px);
   }
 
   .article-wrapper:active {
