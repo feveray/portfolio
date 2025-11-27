@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import thumb from '../img/project.png';
+import { Link } from 'react-router-dom';
 
 const Card = () => {
   return (
     <StyledWrapper>
+      <Link to="/projetos" className="block-link">
       <article className="article-wrapper">
-        <div className="rounded-lg container-project" />
+        <div className="rounded-lg container-project">
+          <img src={thumb} alt="Project thumbnail" className="project-thumb" />
+        </div>
         <div className="project-info">
           <div className="flex-pr">
             <div className="project-title text-nowrap">Projetos</div>
@@ -22,6 +27,7 @@ const Card = () => {
           </div>
         </div>
       </article>
+      </Link>
     </StyledWrapper>
   );
 }
@@ -139,6 +145,17 @@ const StyledWrapper = styled.div`
     width: 100%;
     height: 170px;
     background: gray;
-  }`;
+    overflow: hidden;
+    display: block;
+  }
+
+  .container-project .project-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* preenche sem distorcer */
+    display: block;
+    border-radius: 8px; /* ajustar para coincidir com o arredondamento do container */
+  }
+    `;
 
 export default Card;
