@@ -59,7 +59,7 @@ export default function Hero() {
                 Aqui estão alguns dos meus projetos mais recentes, onde busquei aplicar as melhores práticas de design e desenvolvimento.
               </p>
               <p className="text-dark mb-4">
-                Este portfólio está em constante evolução, com novos projetos sendo adicionados.
+                Este portfólio está em constante evolução, melhorando a estrutura e com novos projetos sendo adicionados.
               </p>
             </div>
 
