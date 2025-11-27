@@ -48,3 +48,12 @@ logs/
 # Others
 *.tgz
 *.lock
+
+# Ignore node_modules
+node_modules/
+
+# Ignore pastas de build
+build/
+
+# Cache do ESLint
+.eslintcache
