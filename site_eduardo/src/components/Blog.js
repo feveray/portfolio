@@ -28,7 +28,7 @@ export default function Blog() {
         <h1 className="sombra-personalizada text-4xl font-[Comfortaa] font-bold text-[#341539]">BLOG</h1>
       </header>
 
-      <main className="flex flex-col items-center py-8 px-4 max-w-4xl mx-auto">
+      <main className="flex flex-col items-center py-8 px-4 max-w-4xl mx-auto flex-1">
         {loading && <p>Carregando posts...</p>}
         {!loading && posts.length === 0 && <p>Nenhum post encontrado.</p>}
         

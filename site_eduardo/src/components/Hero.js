@@ -5,14 +5,18 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaWhatsapp, FaMapMarkerA
 import BackToTopButton from '../components/BackToTopButton';
 import CardProject from './CardProject';
 import CardTags from '../components/CardTags';
+import EmailForm from './EmailForm';
 
 export default function Hero() {
   
   const [flipped, setFlipped] = React.useState(false);
 
+  // ...existing code...
+
   return (
-    <>
-      <section id="home" className="flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-b from-primary to-secondary py-16">
+    <div className="flex flex-col h-full">
+      <main className="flex-1">
+        <section id="home" className="flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-b from-primary to-secondary py-16">
         <div
           className="relative w-64 h-64 mb-6"
           style={{ perspective: '1000px', cursor: 'pointer' }}
@@ -38,11 +42,13 @@ export default function Hero() {
           <p className="text-neutral-dark mb-4 text-justify">
             Profissional com formação em Design de Web e certificação em UX Design pelo Google, em transição para UI/UX e front-end. Comprometido com experiências digitais que reflitam diversidade e representatividade. Meu objetivo é transformar necessidades reais em interfaces claras, funcionais e centradas no ponto de contato entre usuário e produto.
           </p>
+          <p className="font-bold mb-4 text-center"><a href="/eduardodeluna_cv.pdf" target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a></p>
 
-        <section className="max-w-4xl w-full mb-8">
-          <div className="mx-auto w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
+
+        <section className="max-w-4xl w-full mb-8 px-4">
+
             <CardTags />
-          </div>
+
         </section>
 
         </div>
@@ -59,7 +65,7 @@ export default function Hero() {
                 Aqui estão alguns dos meus projetos mais recentes, onde busquei aplicar as melhores práticas de design e desenvolvimento.
               </p>
               <p className="text-dark mb-4">
-                Este portfólio está em constante evolução, melhorando a estrutura e com novos projetos sendo adicionados..
+                Este portfólio está em constante evolução, melhorando a estrutura e com novos projetos sendo adicionados.
               </p>
             </div>
 
@@ -73,7 +79,7 @@ export default function Hero() {
       </section>
 
       {/* Section Contato */}
-      <section id="contato" className="py-16 px-4 bg-neutral-light">
+        <section id="contato" className="py-16 px-4 bg-neutral-light">
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Contato</h2>
           <div className="flex flex-col md:flex-row gap-8 items-start">
@@ -122,22 +128,22 @@ export default function Hero() {
       {/* Você pode adicionar mais informações ou redes sociais aqui se quiser */}
 
             </div>
+
             <div className="md:w-1/2 w-full">
-              <form className="bg-white rounded-lg shadow p-8 flex flex-col gap-6 mb-8 max-w-md md:max-w-none mx-auto md:mx-0">
-                <input type="text" name="nome" placeholder="Nome" className="border border-neutral-light rounded px-4 py-2 focus:outline-none focus:border-primary" required />
-                <input type="email" name="email" placeholder="E-mail" className="border border-neutral-light rounded px-4 py-2 focus:outline-none focus:border-primary" required />
-                <textarea name="mensagem" placeholder="Mensagem" rows="5" className="border border-neutral-light rounded px-4 py-2 focus:outline-none focus:border-primary resize-none" required></textarea>
-                <button type="submit" className="bg-primary text-white font-bold px-6 py-2 rounded hover:bg-secondary transition">Enviar</button>
-              </form>
+              <EmailForm />
             </div>
+
           </div>
 
         </div>
       </section>
 
 
-      <BackToTopButton />
+      </main>
 
-    </>
+      <div className="mt-4">
+        <BackToTopButton />
+      </div>
+    </div>
   );
 }

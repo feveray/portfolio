@@ -1,6 +1,7 @@
 import React from 'react';
 import profileImg from '../img/profile.png';
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import CardTags from '../components/CardTags';
 import BackToTopButton from '../components/BackToTopButton';
 
@@ -24,20 +25,20 @@ export default function SobreMim() {
               <a href="https://github.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaGithub /></a>
               <a href="https://instagram.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaInstagram /></a>
               <a href="https://twitter.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaTwitter /></a>
-              <a href="mailto:eduardo@edilo.com.br" className="text-neutral-medium hover:text-secondary text-2xl"><FaEnvelope /></a>
+              <Link to="/contato" className="text-neutral-medium hover:text-secondary text-2xl" aria-label="Ir para contato"><FaEnvelope /></Link>
             </div>
+              <p className="font-bold mb-4 text-center"><a href="/eduardodeluna_cv.pdf" target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a></p>
           </div>
           <section className="max-w-sm w-full text-left">
             <h2 className="drop-shadow text-2xl font-bold text-[#51572c] mb-2">UX/UI Designer e Front-End Jr</h2>
             <p className="text-neutral-dark mb-4">
-              Olá, eu sou o Eduardo. Tenho 41 anos, sou paulistano da zona sul e apaixonado por pets, fotografia, ciclismo e música — minha playlist está sempre crescendo para acompanhar minhas pedaladas.<br /><br />
+              Tenho 42 anos, sou paulistano da zona sul e apaixonado por pets, fotografia, ciclismo e música — minha playlist está sempre crescendo para acompanhar minhas pedaladas.<br /><br />
 
               Sou formado em Design Web pela Universidade Anhembi Morumbi e estou concluindo o bacharelado em Banco de Dados pela UniBTA. Também finalizei o curso de UX Design certificado pelo Google.<br /><br />
 
-              Como UX Designer, meu propósito é criar experiências inclusivas, representativas e centradas no usuário. Busco identificar necessidades reais, desenvolver ideias únicas e transformá-las em soluções que facilitem a interação das pessoas com produtos digitais.<br /><br />
+              Como designer, meu propósito é criar experiências inclusivas, representativas e centradas no usuário. Busco identificar necessidades reais, desenvolver ideias únicas e transformá-las em soluções que facilitem a interação das pessoas com produtos digitais.<br /><br />
 
-              Este portfólio está em constante evolução, com novos projetos sendo adicionados. Para conversar ou saber mais, é só me chamar pelas redes sociais ou enviar um e-mail <a href="mailto:eduardo@edilo.com.br" className="text-secondary underline">eduardo@edilo.com.br</a>.
-
+              Este portfólio está em constante evolução, com novos projetos sendo adicionados. Para conversar ou saber mais, é só me procurar pelos meus contatos disponíveis.              
             </p>
           </section>
         </div>
@@ -65,7 +66,9 @@ export default function SobreMim() {
 
 
         <section className="max-w-4xl w-full mb-8">
+          <div className="mx-auto w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
           <CardTags />
+          </div>
         </section>
 
 
@@ -83,9 +86,9 @@ export default function SobreMim() {
         <section className="max-w-4xl w-full mb-8">
           <h3 className="text-xl font-bold text-primary mb-2">Experiência</h3>
           <ul className="text-neutral-dark">
-            <li><span className="font-bold">Freelancer - Produtor & eventos/conteúdo</span><br />Produção de eventos, produtor musical, mailing social media, elaboração de conteúdo, identidade visual, edição de vídeos e fotos.</li>
-            <li className="mt-4"><span className="font-bold">Folha de S. Paulo - Produtor de conteúdo</span><br />Coordenação de equipe de fotografia da Folha, pesquisas e edição de imagens, produção de pautas fotográficas e colaboração de textos para o portal F5 e todas as editorias do jornal.</li>
-            <li className="mt-4"><span className="font-bold">Decasom/Polis da HP - Designer gráfico e digital</span><br />Criação e diagramação de folders, cartilhas e relatórios, fotografia, edição de imagens e produção de materiais para eventos corporativos.</li>
+            <li><span className="font-bold">• Freelancer - Produtor de eventos/conteúdo</span><br />Produção de eventos, produtor musical, mailing social media, elaboração de conteúdo, identidade visual, edição de vídeos e fotos.</li>
+            <li className="mt-4"><span className="font-bold">• Folha de S. Paulo - Produtor de conteúdo</span><br />Coordenação de equipe de fotografia da Folha, pesquisas e edição de imagens, produção de pautas fotográficas e colaboração de textos para o portal F5 e todas as editorias do jornal.</li>
+            <li className="mt-4"><span className="font-bold">• Defensoria Pública de SP - Designer gráfico e digital</span><br />Criação e diagramação de folders, cartilhas e relatórios, fotografia, edição de imagens e produção de materiais para eventos corporativos.</li>
           </ul>
         </section>
 

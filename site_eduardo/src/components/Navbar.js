@@ -24,10 +24,10 @@ export default function Navbar({ onNavigate }) {
     <header className="sticky top-0 z-50 bg-primary text-neutral-dark shadow-md">
       <nav className="flex items-center justify-between px-8 py-4 relative">
         <div className="flex items-center gap-4 ml-8">
-          <a href="/home" className="flex items-center" onClick={() => handleNav('Home', 'home')}>
-            <img src={avatarImg} alt="Logo" className="w-8 h-8 rounded-full mr-2" />
-            <span className="font-[Comfortaa] font-bold text-lg drop-shadow">Eduardo de Luna</span>
-          </a>
+          <Link to="/" className="flex items-center" onClick={() => handleNav('Home', 'home')}>
+           <img src={avatarImg} alt="Logo" className="w-8 h-8 rounded-full mr-2" />
+          <span className="font-[Comfortaa] font-bold text-lg drop-shadow">Eduardo de Luna</span>
+          </Link>
         </div>
         {/* Menu desktop */}
         <ul className="hidden md:flex gap-8 justify-center flex-1">
