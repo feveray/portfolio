@@ -27,7 +27,7 @@ export default function SobreMim() {
               <a href="https://twitter.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaTwitter /></a>
               <Link to="/contato" className="text-neutral-medium hover:text-secondary text-2xl" aria-label="Ir para contato"><FaEnvelope /></Link>
             </div>
-              <p className="font-bold mb-4 text-center"><a href="/eduardodeluna_cv.pdf" target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a></p>
+              <p className="font-bold mb-4 text-center"><a href="/site_eduardo/public/eduardodeluna_cv.pdf" target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a></p>
           </div>
           <section className="max-w-sm w-full text-left">
             <h2 className="drop-shadow text-2xl font-bold text-[#51572c] mb-2">UX/UI Designer e Front-End Jr</h2>
