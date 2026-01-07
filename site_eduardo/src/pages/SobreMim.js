@@ -32,7 +32,7 @@ export default function SobreMim() {
           <section className="max-w-sm w-full text-left">
             <h2 className="drop-shadow text-2xl font-bold text-[#51572c] mb-2">UX/UI Designer e Front-End Jr</h2>
             <p className="text-neutral-dark mb-4">
-              Tenho 42 anos, sou paulistano da zona sul e apaixonado por pets, fotografia, ciclismo e música — minha playlist está sempre crescendo para acompanhar minhas pedaladas.<br /><br />
+              Tenho 42 anos, sou paulistano da zona sul e apaixonado por pets, fotografia, ciclismo e música.<br /><br />
 
               Sou formado em Design Web pela Universidade Anhembi Morumbi e estou concluindo o bacharelado em Banco de Dados pela UniBTA. Também finalizei o curso de UX Design certificado pelo Google.<br /><br />
 
