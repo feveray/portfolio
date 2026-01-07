@@ -42,7 +42,9 @@ export default function Hero() {
           <p className="text-neutral-dark mb-4 text-justify">
             Profissional com formação em Design de Web e certificação em UX Design pelo Google, em transição para UI/UX e front-end. Comprometido com experiências digitais que reflitam diversidade e representatividade. Meu objetivo é transformar necessidades reais em interfaces claras, funcionais e centradas no ponto de contato entre usuário e produto.
           </p>
-          <p className="font-bold mb-4 text-center"><a href="/site_eduardo/public/eduardodeluna_cv.pdf" target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a></p>
+          <p className="font-bold mb-4 text-center">
+            <a href={`${process.env.PUBLIC_URL}/eduardodeluna_cv.pdf`} target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a>
+          </p>
 
 
         <section className="max-w-4xl w-full mb-8 px-4">
