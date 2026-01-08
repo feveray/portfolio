@@ -21,70 +21,45 @@ export default function SobreMim() {
           <div className="flex flex-col items-start ml-4">
             <img src={profileImg} alt="Eduardo de Luna" className="w-64 h-64 rounded-full object-cover shadow-lg mb-4" />
             <div className="flex gap-4 mb-6">
-              <a href="https://linkedin.com/in/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaLinkedin /></a>
-              <a href="https://github.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaGithub /></a>
-              <a href="https://instagram.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaInstagram /></a>
-              <a href="https://twitter.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl"><FaTwitter /></a>
+              <a href="https://linkedin.com/in/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl" aria-label='Abrir perfil do LinkedIn de Eduardo de Luna em nova aba'><FaLinkedin /></a>
+              <a href="https://github.com/feveray" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl" aria-label='Abrir perfil do GitHub de Eduardo de Luna em nova aba'><FaGithub /></a>
+              <a href="https://instagram.com/drako" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl" aria-label='Abrir perfil do Instagram de Eduardo de Luna em nova aba'><FaInstagram /></a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary text-2xl" aria-label='Abrir perfil do Twitter de Eduardo de Luna em nova aba'><FaTwitter /></a>
               <Link to="/contato" className="text-neutral-medium hover:text-secondary text-2xl" aria-label="Ir para contato"><FaEnvelope /></Link>
             </div>
-              <p className="font-bold mb-4 text-center"><a href="/site_eduardo/public/eduardodeluna_cv.pdf" target="_blank" rel="noopener noreferrer">● Visualizar currículo em PDF ●</a></p>
+          <p className="font-bold mb-4 text-center">
+            <a href={`${process.env.PUBLIC_URL}/cv_eduardo.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir currículo em PDF em nova aba'>● Visualizar currículo em PDF ●</a>
+          </p>
           </div>
           <section className="max-w-sm w-full text-left">
-            <h2 className="drop-shadow text-2xl font-bold text-[#51572c] mb-2">UX/UI Designer e Front-End Jr</h2>
+            <h2 className="drop-shadow text-2xl font-bold text-[#51572c] mb-2">UX Designer</h2>
             <p className="text-neutral-dark mb-4">
-              Tenho 42 anos, sou paulistano da zona sul e apaixonado por pets, fotografia, ciclismo e música.<br /><br />
+              Comprometido com experiências digitais que reflitam diversidade e representatividade, busco transformar necessidades reais em interfaces claras, funcionais e centradas na relação entre usuário e produto.<br/><br/>
 
-              Sou formado em Design Web pela Universidade Anhembi Morumbi e estou concluindo o bacharelado em Banco de Dados pela UniBTA. Também finalizei o curso de UX Design certificado pelo Google.<br /><br />
+              Tenho interesse por diferentes áreas do design e da tecnologia, e gosto de observar como pessoas interagem com produtos no dia a dia. Fora da tela, encontro inspiração em fotografia, ciclismo, música e na convivência com meus pets.<br/><br/>
 
-              Como designer, meu propósito é criar experiências inclusivas, representativas e centradas no usuário. Busco identificar necessidades reais, desenvolver ideias únicas e transformá-las em soluções que facilitem a interação das pessoas com produtos digitais.<br /><br />
-
-              Este portfólio está em constante evolução, com novos projetos sendo adicionados. Para conversar ou saber mais, é só me procurar pelos meus contatos disponíveis.              
+              Este portfólio está em constante evolução, com novos projetos sendo adicionados. Se quiser trocar uma ideia ou saber mais sobre meu trabalho, é só me chamar pelos contatos disponíveis.              
             </p>
           </section>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mb-8">
-          <div>
-            <h3 className="text-xl font-bold text-secondary mb-2">Habilidades</h3>
-            <ul className="list-disc list-inside text-neutral-dark">
-              <li>Flexibilidade</li>
-              <li>Proatividade</li>
-              <li>Capacidade de análise</li>
-              <li>Capacidade de adaptação</li>
-              <li>Receptividade a feedback</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-secondary mb-2">Conhecimento</h3>
-            <ul className="list-disc list-inside text-neutral-dark">
-              <li>UX/UI Design</li>
-              <li>Banco de Dados</li>
-              <li>Cybersecurity</li>
-              <li>Data Analysis</li>
-            </ul>
-          </div>
-        </div>
 
-
-        <section className="max-w-4xl w-full mb-8">
-          <div className="mx-auto w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
-          <CardTags />
-          </div>
+        <section className="max-w-4xl w-full mb-8 px-4">
+            <CardTags />
         </section>
 
 
-
         <section className="max-w-4xl w-full mb-8">
-          <h3 className="text-xl font-bold text-primary mb-2">Formação</h3>
+          <h3 className="text-xl font-bold text-secondary mb-2">Formação</h3>
           <ul className="text-neutral-dark mb-4">
-            <li><span className="font-bold">Banco de Dados</span> - UniBTA - Superior</li>
-            <li><span className="font-bold">Certificação de Cybersecurity</span> - Google</li>
-            <li><span className="font-bold">Certificação de Data Analysis</span> - Google</li>
-            <li><span className="font-bold">Certificação de UX Design</span> - Google</li>
-            <li><span className="font-bold">Projeto e Produção em Design de Web</span> - Universidade Anhembi Morumbi - Superior</li>
+            <li><span className="font-bold">• Banco de Dados</span> - UniBTA - Superior</li>
+            <li><span className="font-bold">• Certificação de Cybersecurity</span> - Google</li>
+            <li><span className="font-bold">• Certificação de Data Analysis</span> - Google</li>
+            <li><span className="font-bold">• Certificação de UX Design</span> - Google</li>
+            <li><span className="font-bold">• Projeto e Produção em Design de Web</span> - Universidade Anhembi Morumbi - Superior</li>
           </ul>
         </section>
         <section className="max-w-4xl w-full mb-8">
-          <h3 className="text-xl font-bold text-primary mb-2">Experiência</h3>
+          <h3 className="text-xl font-bold text-secondary mb-2">Experiência</h3>
           <ul className="text-neutral-dark">
             <li><span className="font-bold">• Freelancer - Produtor de eventos/conteúdo</span><br />Produção de eventos, produtor musical, mailing social media, elaboração de conteúdo, identidade visual, edição de vídeos e fotos.</li>
             <li className="mt-4"><span className="font-bold">• Folha de S. Paulo - Produtor de conteúdo</span><br />Coordenação de equipe de fotografia da Folha, pesquisas e edição de imagens, produção de pautas fotográficas e colaboração de textos para o portal F5 e todas as editorias do jornal.</li>

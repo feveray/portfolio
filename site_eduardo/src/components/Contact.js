@@ -32,8 +32,10 @@ export default function Contact() {
                   <div className="flex items-start gap-3">
                     <FaWhatsapp className="text-[#51572c] w-5 h-5 mt-1" aria-hidden="true" />
                     <div>
-                      <h4 className="font-title font-bold text-[#51572c] text-left">Whatsapp:</h4>
-                      <p className="text-neutral-dark">+55 11 99273-6662</p>
+                      <a href="https://wa.me/5511992736662" target="_blank" rel="noopener noreferrer" aria-label='Abrir chat no WhatsApp com +55 11 99273 6662'>
+                    <h4 className="font-title font-bold text-[#51572c] text-left">Whatsapp:</h4>
+                    <p className="text-neutral-dark">+55 11 99273-6662</p>
+                    </a>
                     </div>
                   </div>
 
@@ -47,13 +49,13 @@ export default function Contact() {
 
                   <h4 className="font-title font-bold text-[#51572c] text-left mt-2 mb-1">Redes sociais:</h4>
                   <div className="flex justify-center gap-4 text-xl">
-                    <a href="https://linkedin.com/in/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2">
+                    <a href="https://www.linkedin.com/in/eduardo-de-luna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2" aria-label='Abrir perfil do LinkedIn de Eduardo de Luna em nova aba'>
                       <FaLinkedin /> <span className="text-base">LinkedIn</span>
                     </a>
-                    <a href="https://github.com/feveray" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2">
+                    <a href="https://github.com/feveray" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2" aria-label='Abrir perfil do GitHub de Eduardo de Luna em nova aba'>
                       <FaGithub /> <span className="text-base">GitHub</span>
                     </a>
-                    <a href="https://instagram.com/eduardodeluna" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2">
+                    <a href="https://instagram.com/drako" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2" aria-label='Abrir perfil do Instagram de Eduardo de Luna em nova aba'>
                       <FaInstagram /> <span className="text-base">Instagram</span>
                     </a>
                   </div>
