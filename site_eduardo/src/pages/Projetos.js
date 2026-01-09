@@ -1,58 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import floresEliImg from '../components/img/flores-eli.png';
-import arkanaBikesImg from '../components/img/arkana-bikes.png';
-import medsImg from '../components/img/meds.png';
-import calculadoraJS from '../components/img/calculadoraJS.png';
-import geradorQRcode from '../components/img/geradorQRcode.png';
+import { Link, useLocation } from 'react-router-dom';
+import { projects } from '../data/projects';
 import BackToTopButton from '../components/BackToTopButton';
 
-const uxui = [
-  {
-    title: 'Flores Eli',
-    category: 'UX/UI',
-    description: 'Loja online de flores com foco em experiência do usuário e conversão.',
-    image: floresEliImg,
-  },
-  {
-    title: 'ARKANA Bikes',
-    category: 'UX/UI',
-    description: 'Página institucional para startup de bicicletas elétricas.',
-    image: arkanaBikesImg,
-  },
-  {
-    title: 'Meds',
-    category: 'UX/UI',
-    description: 'Aplicativo para controle de medicamentos e lembretes de saúde.',
-    image: medsImg,
-  },
-];
-
-const frontend = [
-  {
-    title: 'Curso React',
-    category: 'Front-end',
-    description: 'Curso completo de ReactJS.',
-    image: floresEliImg,
-  },
-  {
-    title: 'Curso UX Design',
-    category: 'Design',
-    description: 'Formação Google UX Design.',
-    image: arkanaBikesImg,
-  },
-  {
-    title: 'Banco de Dados',
-    category: 'Back-end',
-    description: 'Superior em Banco de Dados pela UniBTA.',
-    image: medsImg,
-  },
-];
+// project data is centralized in src/data/projects.js
 
 export default function Projetos() {
-  const [aba, setAba] = React.useState('uxui');
+  const location = useLocation();
+  const initialTab = location.state?.tab || 'uxui';
+  const [aba, setAba] = React.useState(initialTab);
 
-  const list = aba === 'uxui' ? uxui : frontend;
+  React.useEffect(() => {
+    if (location.state?.tab) window.history.replaceState({}, '', window.location.href);
+  }, [location.state]);
+
+  const list =
+    aba === 'uxui'
+      ? projects.filter((p) => p.category === 'UX/UI')
+      : projects.filter((p) => p.category !== 'UX/UI');
 
   const makeSlug = (title) =>
     title
