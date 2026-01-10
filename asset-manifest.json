@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7d6a788f.css",
-    "main.js": "/portfolio/static/js/main.fc204193.js",
+    "main.css": "/portfolio/static/css/main.3797d911.css",
+    "main.js": "/portfolio/static/js/main.12799cff.js",
     "static/media/project.png": "/portfolio/static/media/project.f9d647778c25d9cc4b5f.png",
     "static/media/profile.png": "/portfolio/static/media/profile.51ce2cf2e43efcdd302d.png",
     "static/media/profile2.PNG": "/portfolio/static/media/profile2.3e0c2cccb500da3a2114.PNG",
+    "static/media/meds668.png": "/portfolio/static/media/meds668.11a14ad65d7bf8aaa9b5.png",
     "static/media/avatar_final.png": "/portfolio/static/media/avatar_final.cb1be720cf64caf46ee8.png",
     "static/media/arkana668.png": "/portfolio/static/media/arkana668.4297fc59865bd467cf34.png",
     "static/media/flores-eli668.png": "/portfolio/static/media/flores-eli668.1519d44c42ebe0ba4b6c.png",
@@ -12,11 +13,11 @@
     "static/media/arkana-bikes.png": "/portfolio/static/media/arkana-bikes.076d9f86d6961b775942.png",
     "static/media/meds.png": "/portfolio/static/media/meds.921d7a4ba65f3d909bb0.png",
     "index.html": "/portfolio/index.html",
-    "main.7d6a788f.css.map": "/portfolio/static/css/main.7d6a788f.css.map",
-    "main.fc204193.js.map": "/portfolio/static/js/main.fc204193.js.map"
+    "main.3797d911.css.map": "/portfolio/static/css/main.3797d911.css.map",
+    "main.12799cff.js.map": "/portfolio/static/js/main.12799cff.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d6a788f.css",
-    "static/js/main.fc204193.js"
+    "static/css/main.3797d911.css",
+    "static/js/main.12799cff.js"
   ]
 }
