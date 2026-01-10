@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function CardTags() {
   const tags = [
-    "Design Thinking", "Design System", "Acessibilidade", "UI", "UX", "Figma", "Wireframing", "Adobe XD", "Photoshop", "Illustrator", "Indesign", "HTML", "CSS", "MySQL", "JavaScript", "WordPress", "Git", "GitHub", "Fundamentos de Cybersecurity"
+    "Design Thinking", "Design System", "Acessibilidade", "Fundamentos de Cybersecurity", "Wireframing","UI", "UX", "Figma",  "Adobe XD", "Photoshop", "Illustrator", "Indesign", "HTML", "CSS", "MySQL", "JavaScript", "WordPress", "Git", "GitHub",
   ];
 
   return (
-    <div className="w-full h-72 m-8 mr-0 bg-[#AABF91] p-4 flex flex-col rounded-xl shadow-[-20px_20px_0px_-5px_#31572c] text-[#31572c]">
+    <div className="w-full h-72 mr-0 bg-[#AABF91] p-4 flex flex-col rounded-xl shadow-[-20px_20px_0px_-5px_#31572c] text-[#31572c]">
       <span className="font-black text-xl mb-4">Habilidades e Ferramentas</span>
       <div className="overflow-auto h-full custom-scrollbar">
         <ul className="flex flex-wrap">

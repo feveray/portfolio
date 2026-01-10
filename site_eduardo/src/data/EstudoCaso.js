@@ -1,6 +1,6 @@
 import floresEliImg from '../components/img/flores-eli668.png';
 import arkanaBikesImg from '../components/img/arkana668.png';
-import medsImg from '../components/img/meds.png';
+import medsImg from '../components/img/meds668.png';
 import calculadoraJS from '../components/img/calculadoraJS.png';
 import geradorQRcode from '../components/img/geradorQRcode.png';
 import portDigital from '../components/img/pdigital.png';
@@ -17,6 +17,7 @@ export const projects = [
       'Usuários que buscam fazer pedidos online de forma descomplicada e que atenda suas necessidades com os produtos.',
       'um aplicativo para comprar os produtos da floricultura de forma simples, sem precisar sair do local e trazer a experiência de clientes que frequentam a loja.',
       'Uma interface intuitiva para os usuários.',
+      '🚧',
     ],
   },
   {
@@ -29,6 +30,7 @@ export const projects = [
     caseStudy: [
       'O objetivo do projeto foi criar um site responsivo onde fosse possível fornecer todos os itens necessários e orientar os usuários para adquirir um produto que atenda suas necessidades.',
       'Criar um design intuitivo e um processo de checkout rápido',
+      '🚧',      
     ],
   },
   {
@@ -43,6 +45,7 @@ export const projects = [
       'Pesquisa: entrevistas com usuários e testes de usabilidade.',
       'Solução: lembretes, histórico e notificações integradas.',
       'Resultados: feedback positivo em testes piloto.',
+      '🚧',
     ],
   },
   {
@@ -68,6 +71,7 @@ export const projects = [
     image: portDigital,
     caseStudy: [
         'Estudo de caso deste portfólio digital, abordando decisões de UX/UI, organização de conteúdo, design responsivo e implementação front-end.',
+        '🚧',
     ],
   },
 ];

@@ -40,18 +40,16 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Sobre mim</h2>
           <p className="text-neutral-dark mb-4 text-left">
-            Profissional com formação em Design de Web, atuação em UI/UX e na construção de interfaces front-end. 
+            Designer com formação em Design de Web, atuação em UI/UX e na construção de interfaces front-end. 
             Comprometido com experiências digitais que reflitam diversidade e representatividade, busco transformar necessidades reais em interfaces claras, funcionais e centradas na relação entre usuário e produto.
           </p>
-          <p className="font-bold mb-4 text-center">
+          <p className="font-bold mb-4 text-center text-neutral-medium">
             <a href={`${process.env.PUBLIC_URL}/cv_eduardo.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir currículo em PDF em nova aba'>● Visualizar currículo em PDF ●</a>
           </p>
 
 
-        <section className="max-w-4xl w-full mb-8 px-4">
-
-            <CardTags />
-
+        <section className="max-w-4xl w-full mb-4 pl-4 pr-4 ml-2">
+          <CardTags />
         </section>
 
         </div>

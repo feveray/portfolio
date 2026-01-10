@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { projects } from '../data/projects';
+import { projects } from '../data/EstudoCaso';
 import BackToTopButton from '../components/BackToTopButton';
 
-// project data is centralized in src/data/projects.js
+// project data is centralized in src/data/EstudoCaso.js
 
 export default function Projetos() {
   const location = useLocation();

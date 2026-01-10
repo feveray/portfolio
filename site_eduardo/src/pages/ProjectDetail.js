@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { projects } from '../data/projects';
+import { projects } from '../data/EstudoCaso';
 
 // Editable button/link labels and destinations
 const BACK_BUTTON_TEXT = 'Voltar';

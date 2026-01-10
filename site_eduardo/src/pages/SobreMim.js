@@ -43,36 +43,33 @@ export default function SobreMim() {
           </section>
         </div>
 
-        <section className="max-w-4xl w-full mb-8 px-4">
+        <section className="max-w-4xl w-full mb-8 pl-4 pr-4 ml-2">
             <CardTags />
         </section>
 
-
-        <section className="max-w-4xl w-full mb-8">
+        <section className="max-w-4xl w-full mt-8 mb-4 pl-4 pr-4 ml-2">
           <h3 className="text-xl font-bold text-secondary mb-2">Formação</h3>
           <ul className="text-neutral-dark mb-4">
-            <li><span className="font-bold">• Banco de Dados</span> - UniBTA - Superior</li>
-            <li><span className="font-bold">• Certificação de Cybersecurity</span> - Google</li>
-            <li><span className="font-bold">• Certificação de Data Analysis</span> - Google</li>
-            <li><span className="font-bold">• Certificação de UX Design</span> - Google</li>
-            <li><span className="font-bold">• Projeto e Produção em Design de Web</span> - Universidade Anhembi Morumbi - Superior</li>
+            <li><span className="font-bold">• Banco de Dados</span> - UniBTA - (em andamento)</li>
+            <li><span className="font-bold">• Certificação de Cybersecurity</span> - Google (em andamento)</li>
+            <li><a href={`${process.env.PUBLIC_URL}/google_data.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir certificado de Data Analysis em PDF em nova aba'><span className="font-bold">• Certificação de Data Analysis</span> - Google</a></li>
+            <li><a href={`${process.env.PUBLIC_URL}/google_ux.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir certificado de UX Design em PDF em nova aba'><span className="font-bold">• Certificação de UX Design</span> - Google</a></li>
+            <li><span className="font-bold">• Projeto e Produção em Design de Web</span> - Universidade Anhembi Morumbi</li>
           </ul>
         </section>
-        <section className="max-w-4xl w-full mb-8">
+        
+        <section className="max-w-4xl w-full mt-4 mb-8 pl-4 pr-4 ml-2">
           <h3 className="text-xl font-bold text-secondary mb-2">Experiência</h3>
           <ul className="text-neutral-dark">
-            <li><span className="font-bold">• Freelancer - Produtor de eventos/conteúdo</span><br />Produção de eventos, produtor musical, mailing social media, elaboração de conteúdo, identidade visual, edição de vídeos e fotos.</li>
+            <li><span className="font-bold">• Freelancer - Produtor de eventos/conteúdo</span><br />Atuação multidisciplinar em projetos de comunicação e eventos, com foco em identidade visual, conteúdo digital, social media e produção audiovisual. Desenvolvimento de peças gráficas, edição de imagens e vídeos, e apoioestratégico à divulgação de projetos culturais.</li>
             <li className="mt-4"><span className="font-bold">• Folha de S. Paulo - Produtor de conteúdo</span><br />Coordenação de equipe de fotografia da Folha, pesquisas e edição de imagens, produção de pautas fotográficas e colaboração de textos para o portal F5 e todas as editorias do jornal.</li>
-            <li className="mt-4"><span className="font-bold">• Defensoria Pública de SP - Designer gráfico e digital</span><br />Criação e diagramação de folders, cartilhas e relatórios, fotografia, edição de imagens e produção de materiais para eventos corporativos.</li>
+            <li className="mt-4"><span className="font-bold">• Defensoria Pública de SP - Designer gráfico e digital</span><br />Criação de materiais gráficos e digitais institucionais, como folders, cartilhas e relatórios, com atuação em fotografia, edição de imagens e desenvolvimento de peças visuais para eventos corporativos.</li>
           </ul>
         </section>
 
         <div className="flex justify-center mt-8">
         <BackToTopButton />
-      </div>
-
-
-        
+      </div>        
       </main>
     </>  
   );
