@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 220px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+    outline: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#generateBtn {
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.qrcodeContent {
+    margin-top: 10px;
+}
