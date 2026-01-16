@@ -47,7 +47,7 @@ export default function BackToTopButton() {
           />
         </svg>
         <p className="absolute bottom-[-18px] text-black text-[0.7em] w-[100px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-          Back to Top
+          Voltar ao Topo
         </p>
       </button>
     </div>

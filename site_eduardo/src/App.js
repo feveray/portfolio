@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
+import GeradorQR from './pages/GeradorQR';
+import CalculadoraJS from './pages/CalculadoraJS';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import Hero from './components/Hero';
@@ -30,9 +31,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projetos" element={<Projetos />} />
           <Route path="/projetos/:slug" element={<ProjectDetail />} />
-          <Route path="/especializacoes" element={<Specializations />} />
+          <Route path="/gerador-qr" element={<GeradorQR />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contato" element={<Contact />} />
+          <Route path="/calculadora-web" element={<CalculadoraJS />} />
         </Routes>
       </main>
 

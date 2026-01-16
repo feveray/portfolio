@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CardTags() {
   const tags = [
-    "Design Thinking", "Design System", "Acessibilidade", "Fundamentos de Cybersecurity", "Wireframing","UI", "UX", "Figma",  "Adobe XD", "Photoshop", "Illustrator", "Indesign", "HTML", "CSS", "MySQL", "JavaScript", "WordPress", "Git", "GitHub",
+    "Design Thinking", "Design System", "Acessibilidade", "Fundamentos de Cybersecurity", "Wireframing","UI", "UX", "Figma",  "Adobe XD", "Photoshop", "Illustrator", "Indesign", "HTML", "CSS", "MySQL", "Power BI", "JavaScript", "WordPress", "Git", "GitHub", "IA"
   ];
 
   return (

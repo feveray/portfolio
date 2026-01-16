@@ -53,19 +53,31 @@ export const projects = [
     category: 'Front-end',
     description: 'Calculadora desenvolvida com HTML, CSS e JavaScript',
     image: calculadoraJS,
-    caseStudy: [],
+    route: '/calculadora-web',
+    caseStudy: [
+        'Operações Matemáticas: +, -, ×, ÷ com precedência correta via switch case',
+        'Entrada Numérica: Dígitos 0-9, vírgula decimal',
+        'Controles: C (clear all), = (calcular), % (porcentagem contextual)',
+        'Validações: Evita múltiplas vírgulas, divisão por zero, precisão até 5 casas decimais',
+        'UX Responsiva: Feedback visual (active opacity 0.9), display real-time',
+    ],
   },
   {
     title: 'Gerador de QR Code',
     category: 'Front-end',
     description: 'Gerador de QR Code desenvolvido com HTML, CSS e JavaScript',
     image: geradorQRcode,
+    route: '/gerador-qr',    // <-- nova propriedade para rota interna        
     caseStudy: [
-        'Ferramenta web para geração de QR Codes a partir de texto ou links, desenvolvida com HTML, CSS e JavaScript, priorizando usabilidade e feedback visual.',
+        'Geração Instantânea: Digite URL/texto → QR Code gerado via API REST',
+        'Atalhos UX: Enter para gerar (keyPress listener)',
+        'Validação: Bloqueia geração vazia (if !input.value)',
+        'Download Implícito: QR clicável para salvar (img src dinâmica)',
     ],
   },
   {
     title: 'Portfólio Digital',
+    slug: 'portfolio-digital',
     category: 'UX/UI + Front-end',
     description: 'Estudo de caso do processo de criação do portfólio digital.',
     image: portDigital,

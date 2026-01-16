@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import thumb from '../img/project.png';
 import { Link } from 'react-router-dom';
 
-const Card = () => {
+const Card = ({ project }) => {
   return (
     <StyledWrapper>
       <Link to="/projetos" className="block-link">
@@ -28,6 +28,13 @@ const Card = () => {
         </div>
       </article>
       </Link>
+      {project ? (
+        project.route ? (
+          <Link to={project.route} className="text-primary hover:underline">Abrir projeto</Link>
+        ) : project.liveLink ? (
+          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">Abrir projeto</a>
+        ) : null
+      ) : null}
     </StyledWrapper>
   );
 }

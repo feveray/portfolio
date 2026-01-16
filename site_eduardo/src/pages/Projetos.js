@@ -28,7 +28,7 @@ export default function Projetos() {
 
   return (
     <>
-      <header className="relative sombra-personalizada bg-gradient from-primary to-secondary pt-20 pb-20 px-64 w-full">
+      <header className="relative sombra-personalizada bg-gradient from-primary to-secondary pt-20 pb-20 px-4 md:px-64 w-full">
         <section id="projetos" className="w-full">
           <h1 className="sombra-personalizada text-4xl font-[Comfortaa] font-bold text-[#341539]">PROJETOS</h1>
         </section>
@@ -36,7 +36,7 @@ export default function Projetos() {
 
       <section className="py-16 px-4 bg-neutral-light min-h-screen">
         <div className="max-w-5xl mx-auto">
-          <div className="flex gap-4 mb-8">
+          <div className="flex flex-wrap gap-4 mb-8">
             <button
               className={`px-4 py-2 rounded ${aba === 'uxui' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-primary'}`}
               onClick={() => setAba('uxui')}

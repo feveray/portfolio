@@ -1,8 +1,9 @@
 import React from 'react';
-import profileImg from '../img/profile.png';
-import profileImg2 from '../img/profile2.PNG';
+import profileImg from '../img/pvetor.png';
+import profileImg2 from '../img/perfil-vr.png';
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
 import BackToTopButton from '../components/BackToTopButton';
+import { Link } from 'react-router-dom';
 import CardProject from './CardProject';
 import CardTags from '../components/CardTags';
 import EmailForm from './EmailForm';
@@ -16,9 +17,9 @@ export default function Hero() {
   return (
     <div className="flex flex-col h-full">
       <main className="flex-1">
-        <section id="home" className="flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-b from-primary to-secondary py-16">
+        <section id="home" className="flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-b from-primary to-secondary py-16 px-4">
         <div
-          className="relative w-64 h-64 mb-6"
+          className="relative w-48 h-48 md:w-64 md:h-64 mb-6"
           style={{ perspective: '1000px', cursor: 'pointer' }}
           onClick={() => setFlipped(!flipped)}
         >
@@ -31,19 +32,20 @@ export default function Hero() {
             />
           </div>
         </div>
-        <h1 className="font-[Comfortaa] text-4xl font-bold text-neutral-dark mb-4 text-center drop-shadow">Eduardo de Luna</h1>
-        <p className="text-[#AABF91] sombra-personalizada text-lg text-center max-w-xl drop-shadow-1g">UX/UI Designer ● Front-End Jr</p>
+        <h1 className="font-[Comfortaa] text-4xl font-bold text-neutral-dark mb-2 text-center drop-shadow">Eduardo de Luna</h1>
+        <p className="text-primary sombra-personalizada text-lg text-center max-w-xl drop-shadow-1g font-medium">Designer Digital</p>
       </section>
 
       {/* Section Mini Sobre */}
       <section id="mini-sobre" className="py-16 px-4 bg-neutral-light">
         <div className="max-w-4xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Sobre mim</h2>
-          <p className="text-neutral-dark mb-4 text-left">
+          <p className="text-neutral-dark mb-3 text-left">
             Designer com formação em Design de Web, atuação em UI/UX e na construção de interfaces front-end. 
-            Comprometido com experiências digitais que reflitam diversidade e representatividade, busco transformar necessidades reais em interfaces claras, funcionais e centradas na relação entre usuário e produto.
+            Comprometido com experiências digitais que reflitam diversidade e representatividade, busco transformar necessidades reais em interfaces claras, funcionais e centradas na relação entre usuário e produto.{' '}
+            <Link to="/sobre" className="text-secondary font-semibold hover:text-primary ml-1">Veja mais</Link>
           </p>
-          <p className="font-bold mb-4 text-center text-neutral-medium">
+          <p className="font-bold mb-8 text-left text-neutral-medium">
             <a href={`${process.env.PUBLIC_URL}/cv_eduardo.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir currículo em PDF em nova aba'>● Visualizar currículo em PDF ●</a>
           </p>
 
