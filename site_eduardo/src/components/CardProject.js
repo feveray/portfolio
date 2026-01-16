@@ -23,7 +23,7 @@ const Card = ({ project }) => {
           </div>
           <div className="types">
             <span style={{backgroundColor: 'rgba(165, 96, 247, 0.43)', color: 'rgb(85, 27, 177)'}} className="project-type">• UX/UI •</span>
-            <span className="project-type">• Front-end •</span>
+            <span className="project-type">• Projetos Web •</span>
           </div>
         </div>
       </article>

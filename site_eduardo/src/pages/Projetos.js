@@ -47,7 +47,7 @@ export default function Projetos() {
               className={`px-4 py-2 rounded ${aba === 'dev' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-primary'}`}
               onClick={() => setAba('dev')}
             >
-              Front-end
+              Projetos Web
             </button>
             <button
               className={`px-4 py-2 rounded ${aba === 'dev' && aba !== 'uxui' ? 'hidden' : 'hidden'}`}
@@ -60,7 +60,7 @@ export default function Projetos() {
             className="font-title text-3xl font-bold mb-8"
             style={{ color: aba === 'uxui' ? '#51572c' : '#51572c' }}
           >
-            {aba === 'uxui' ? 'UX/UI' : 'Front-end'}
+            {aba === 'uxui' ? 'UX/UI' : 'Projetos Web'}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

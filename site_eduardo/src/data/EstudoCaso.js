@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     title: 'Calculadora Web',
-    category: 'Front-end',
+    category: 'JavaScript',
     description: 'Calculadora desenvolvida com HTML, CSS e JavaScript',
     image: calculadoraJS,
     route: '/calculadora-web',
@@ -64,7 +64,7 @@ export const projects = [
   },
   {
     title: 'Gerador de QR Code',
-    category: 'Front-end',
+    category: 'JavaScript',
     description: 'Gerador de QR Code desenvolvido com HTML, CSS e JavaScript',
     image: geradorQRcode,
     route: '/gerador-qr',    // <-- nova propriedade para rota interna        
@@ -78,7 +78,7 @@ export const projects = [
   {
     title: 'Portfólio Digital',
     slug: 'portfolio-digital',
-    category: 'UX/UI + Front-end',
+    category: 'Estudo de Caso',
     description: 'Estudo de caso do processo de criação do portfólio digital.',
     image: portDigital,
     caseStudy: [
