@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { projects } from '../data/EstudoCaso';
 
@@ -18,6 +18,27 @@ export default function ProjectDetail() {
 
   const all = projects;
   const project = all.find((p) => makeSlug(p.title) === slug);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
+
+  // Render string with inline **bold** markers converted to <strong>
+  const renderInlineBold = (text) => {
+    if (typeof text !== 'string') return text;
+    const parts = text.split(/(\*\*[^*]+\*\*)/g);
+    return parts.map((part, idx) => {
+      const m = part.match(/^\*\*(.*)\*\*$/);
+      if (m) return <strong key={idx}>{m[1]}</strong>;
+      return part;
+    });
+  };
+
+  useEffect(() => {
+    if (!lightboxSrc) return;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setLightboxSrc(null);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [lightboxSrc]);
 
   // Inline fallback for geradorQR demo (embed CSS/JS via srcDoc to avoid dev-server routing issues)
   const geradorCss = `* {
@@ -209,22 +230,179 @@ function genQRCode() {
             <img src={project.image} alt={project.title} className="w-full h-auto rounded-md mb-6" />
           )}
 
-          {project.route !== '/calculadora-web' && project.route !== '/gerador-qr' ? (
+          {project.route !== '/calculadora-web' && project.route !== '/gerador-qr' && makeSlug(project.title) !== 'flores-eli' ? (
             <p className="text-neutral-dark mb-4">{project?.description}</p>
           ) : null}
 
           <section className="mt-6">
             <h2 className="text-2xl font-semibold mb-3">Estudo de Caso</h2>
             {project.caseStudy && project.caseStudy.length > 0 ? (
-              <ul className="list-disc pl-5 text-neutral-dark">
-                {project.caseStudy.map((item, i) => (
-                  <li key={i} className="mb-1">{item}</li>
-                ))}
+              <ul className="list-none pl-0 text-neutral-dark">
+                {project.caseStudy.map((item, i) => {
+                  if (typeof item === 'string') {
+                    return (
+                      <li key={i} className="mb-1">
+                        {item}
+                      </li>
+                    );
+                  }
+
+                  if (!item || typeof item !== 'object') return null;
+
+                  if (item.type === 'subtitle' && item.content) {
+                    return (
+                      <li key={i} className="mt-8 mb-2">
+                          <h3 className="text-lg font-semibold text-secondary">{renderInlineBold(item.content)}</h3>
+                      </li>
+                    );
+                  }
+
+                  if (item.type === 'paragraph' && item.content) {
+                    return (
+                      <li key={i} className={item.className || 'mb-6 md:mb-8'}>
+                          <p className="text-neutral-dark">{renderInlineBold(item.content)}</p>
+                      </li>
+                    );
+                  }
+
+                  if (item.type === 'text' && item.content) {
+                    return (
+                      <li key={i} className="mb-1">
+                          {renderInlineBold(item.content)}
+                      </li>
+                    );
+                  }
+
+                  if (item.type === 'list' && Array.isArray(item.items)) {
+                    return (
+                      <li key={i} className="mb-2 w-full">
+                        <ul className="list-disc pl-6 text-neutral-dark">
+                          {item.items.map((it, idx) => (
+                            <li key={idx} className="mb-1">{renderInlineBold(it)}</li>
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  }
+
+                          if (item.type === 'image' && item.src) {
+                            // Special case: wireframe on paper — larger, no border
+                            // Rascunho no papel: remover borda e aumentar
+                            if (item.alt === 'Rascunho no papel das telas') {
+                              return (
+                                <li key={i} className="mb-8 flex flex-col items-center">
+                                  <img
+                                    src={item.src}
+                                    alt={item.alt || ''}
+                                    className="w-full md:w-4/5 lg:w-3/4 h-auto cursor-zoom-in my-2"
+                                    onClick={() => setLightboxSrc(item.src)}
+                                  />
+                                  {(item.caption || item.link) && (
+                                    <figcaption className="text-sm text-neutral-dark mt-0 text-center">
+                                      {item.caption}
+                                      {item.link && (
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-primary underline ml-2">Clique aqui</a>
+                                      )}
+                                    </figcaption>
+                                  )}
+                                </li>
+                              );
+                            }
+
+                            // Protótipo de baixa fidelidade: maior e sem borda
+                            if (item.alt === 'protótipo de baixa fidelidade') {
+                              return (
+                                <li key={i} className="mb-8 flex flex-col items-center">
+                                  <img
+                                    src={item.src}
+                                    alt={item.alt || ''}
+                                    className="w-full md:w-11/12 lg:w-10/12 h-auto cursor-zoom-in my-4"
+                                    onClick={() => setLightboxSrc(item.src)}
+                                  />
+                                  {(item.caption || item.link) && (
+                                    <figcaption className="text-sm text-neutral-dark mt-2 text-center">
+                                      {item.caption}
+                                      {item.link && (
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-primary underline ml-2">Clique aqui</a>
+                                      )}
+                                    </figcaption>
+                                  )}
+                                </li>
+                              );
+                            }
+
+                            if (item.alt === 'wireframe digital' || item.alt === 'Wireframe digital') {
+                              return (
+                                <li key={i} className="mb-6 flex flex-col items-center">
+                                  <img
+                                    src={item.src}
+                                    alt={item.alt || ''}
+                                    className="w-full md:w-11/12 lg:w-10/12 h-auto rounded-md cursor-zoom-in mt-0 mb-0"
+                                    onClick={() => setLightboxSrc(item.src)}
+                                  />
+                                  {(item.caption || item.link) && (
+                                    <figcaption className="text-sm text-neutral-dark mt-2 text-center">
+                                      {item.caption}
+                                      {item.link && (
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-primary underline ml-2">Clique aqui</a>
+                                      )}
+                                    </figcaption>
+                                  )}
+                                </li>
+                              );
+                            }
+                            // Telas alta fidelidade
+                            return (
+                              <li key={i} className="mb-4 flex flex-col items-center">
+                                <img
+                                  src={item.src}
+                                  alt={item.alt || ''}
+                                  className={`w-full md:w-4/5 lg:w-3/4 h-auto cursor-zoom-in ${item.className || 'my-4'}`}
+                                  onClick={() => setLightboxSrc(item.src)}
+                                />
+                                {(item.caption || item.link) && (
+                                  <figcaption className="text-sm text-neutral-dark mt-2 text-center">
+                                    {item.caption}
+                                    {item.link && (
+                                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-primary underline ml-2">Clique aqui</a>
+                                    )}
+                                  </figcaption>
+                                )}
+                              </li>
+                            );
+                          }
+
+                  return null;
+                })}
               </ul>
             ) : (
               <p className="text-neutral-dark">Sem conteúdo de estudo de caso para este projeto.</p>
             )}
           </section>
+          {/* Lightbox / modal for image zoom */}
+          {lightboxSrc && (
+            <div
+              className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4"
+              onClick={() => setLightboxSrc(null)}
+            >
+              <button
+                aria-label="Fechar"
+                className="absolute top-6 right-6 bg-white rounded-full p-2 shadow z-60"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setLightboxSrc(null);
+                }}
+              >
+                ✕
+              </button>
+              <img
+                src={lightboxSrc}
+                alt="Preview"
+                className="max-w-full max-h-[90vh] rounded shadow-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </div>
+          )}
         </div>
       </section>
     </>

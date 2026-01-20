@@ -38,13 +38,13 @@ export default function Projetos() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-wrap gap-4 mb-8">
             <button
-              className={`px-4 py-2 rounded ${aba === 'uxui' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-primary'}`}
+              className={`px-4 py-2 rounded ${aba === 'uxui' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-[#51572c]'}`}
               onClick={() => setAba('uxui')}
             >
               UX/UI
             </button>
             <button
-              className={`px-4 py-2 rounded ${aba === 'dev' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-primary'}`}
+              className={`px-4 py-2 rounded ${aba === 'dev' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-[#51572c]'}`}
               onClick={() => setAba('dev')}
             >
               Projetos Web

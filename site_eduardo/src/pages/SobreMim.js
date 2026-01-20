@@ -36,7 +36,7 @@ export default function SobreMim() {
             <p className="text-neutral-dark mb-4">
               Comprometido com experiências digitais que reflitam diversidade e representatividade, busco transformar necessidades reais em interfaces claras, funcionais e centradas na relação entre usuário e produto.<br/><br/>
 
-              Tenho interesse por diferentes áreas do design e da tecnologia, e gosto de observar como pessoas interagem com produtos no dia a dia. Fora da tela, encontro inspiração em fotografia, ciclismo, música e na convivência com meus pets.<br/><br/>
+              Tenho interesse por diferentes áreas do design e da tecnologia, e gosto de observar como as pessoas interagem com produtos no dia a dia. Fora da tela, encontro inspiração em fotografia, ciclismo, música e na convivência com meus pets.<br/><br/>
 
               Este portfólio está em constante evolução, com novos projetos sendo adicionados. Se quiser trocar uma ideia ou saber mais sobre meu trabalho, é só me chamar pelos contatos disponíveis.              
             </p>
