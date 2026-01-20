@@ -1,9 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a74b3f0b.css",
-    "main.js": "/portfolio/static/js/main.46e06ac2.js",
+    "main.css": "/portfolio/static/css/main.747c7871.css",
+    "main.js": "/portfolio/static/js/main.c3a53ff4.js",
     "static/media/perfile.png": "/portfolio/static/media/perfile.4c30b708188554621641.png",
+    "static/media/prototipo-alt.png": "/portfolio/static/media/prototipo-alt.c170a737c61bb14a8c20.png",
     "static/media/project.png": "/portfolio/static/media/project.f9d647778c25d9cc4b5f.png",
+    "static/media/telas-altafid.png": "/portfolio/static/media/telas-altafid.a30c5c3ed5eae48b1685.png",
+    "static/media/rascunho-eli.jpg": "/portfolio/static/media/rascunho-eli.aa18589df101747f353f.jpg",
+    "static/media/prototipo-baixa.png": "/portfolio/static/media/prototipo-baixa.c5e42560ec1923655973.png",
+    "static/media/modelo1.png": "/portfolio/static/media/modelo1.959909132753cbdc5edf.png",
+    "static/media/modelo2.png": "/portfolio/static/media/modelo2.439b2036cea8549134f4.png",
+    "static/media/wireframe-papel.jpg": "/portfolio/static/media/wireframe-papel.fe211fd807786bc1669d.jpg",
     "static/media/meds668.png": "/portfolio/static/media/meds668.11a14ad65d7bf8aaa9b5.png",
     "static/media/avatar_final.png": "/portfolio/static/media/avatar_final.cb1be720cf64caf46ee8.png",
     "static/media/arkana668.png": "/portfolio/static/media/arkana668.4297fc59865bd467cf34.png",
@@ -14,11 +21,11 @@
     "static/media/arkana-bikes.png": "/portfolio/static/media/arkana-bikes.076d9f86d6961b775942.png",
     "static/media/meds.png": "/portfolio/static/media/meds.921d7a4ba65f3d909bb0.png",
     "index.html": "/portfolio/index.html",
-    "main.a74b3f0b.css.map": "/portfolio/static/css/main.a74b3f0b.css.map",
-    "main.46e06ac2.js.map": "/portfolio/static/js/main.46e06ac2.js.map"
+    "main.747c7871.css.map": "/portfolio/static/css/main.747c7871.css.map",
+    "main.c3a53ff4.js.map": "/portfolio/static/js/main.c3a53ff4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a74b3f0b.css",
-    "static/js/main.46e06ac2.js"
+    "static/css/main.747c7871.css",
+    "static/js/main.c3a53ff4.js"
   ]
 }
