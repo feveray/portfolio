@@ -11,6 +11,7 @@ import telasAfidel from '../components/img/telas-altafid.png';
 import modelo1 from '../components/img/modelo1.png';
 import modelo2 from '../components/img/modelo2.png';
 import altaFidel from '../components/img/prototipo-alt.png';
+import blastedTela from '../components/img/tela-blasted.png';
 
 export const projects = [
   {
@@ -114,13 +115,15 @@ export const projects = [
     ],
   },
   {
-    title: 'Portfólio Digital',
-    slug: 'portfolio-digital',
-    category: 'Estudo de Caso',
-    description: 'Estudo de caso do processo de criação do portfólio digital.',
-    image: portDigital,
+    title: 'BLASTED',
+    slug: 'blasted',
+    category: 'Landing Page',
+    description: 'Landing page desenvolvida para a peça teatral Blasted, de Sarah Kane.',
+    image: blastedTela,
+    prototypeLink: 'https://blasted.netlify.app', // <--- URL do protótipo
+    prototypeText: 'Landing Page',    
     caseStudy: [
-        'Estudo de caso deste portfólio digital, abordando decisões de UX/UI, organização de conteúdo, design responsivo e implementação front-end.',
+        'Landing page institucional para divulgação da peça Blasted, com foco em hierarquia de informação, performance, acessibilidade básica, navegação fluida e design responsivo.',
         '🚧',
     ],
   },

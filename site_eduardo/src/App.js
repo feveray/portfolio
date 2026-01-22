@@ -10,7 +10,6 @@ import SobreMim from './pages/SobreMim';
 import Portfolio from './components/Projetos_inicio';
 import Projetos from './pages/Projetos';
 import ProjectDetail from './pages/ProjectDetail';
-import Specializations from './components/Specializations';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';

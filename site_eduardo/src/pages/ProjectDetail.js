@@ -188,7 +188,7 @@ function genQRCode() {
             ) : null}
 
             {project && project.prototypeLink ? (
-              <a href={project.prototypeLink} target="_blank" rel="noopener noreferrer" className="ml-2 px-4 py-2 rounded bg-primary text-white hover:bg-secondary transition">Protótipo</a>
+              <a href={project.prototypeLink} target="_blank" rel="noopener noreferrer" className="ml-2 px-4 py-2 rounded bg-primary text-white hover:bg-secondary transition">{project.prototypeText || 'Protótipo'}</a>
             ) : null}
           </div>
 
