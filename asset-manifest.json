@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.747c7871.css",
-    "main.js": "/portfolio/static/js/main.c3a53ff4.js",
+    "main.css": "/portfolio/static/css/main.c8188b67.css",
+    "main.js": "/portfolio/static/js/main.1b73cf65.js",
     "static/media/perfile.png": "/portfolio/static/media/perfile.4c30b708188554621641.png",
     "static/media/prototipo-alt.png": "/portfolio/static/media/prototipo-alt.c170a737c61bb14a8c20.png",
     "static/media/project.png": "/portfolio/static/media/project.f9d647778c25d9cc4b5f.png",
@@ -15,17 +15,18 @@
     "static/media/avatar_final.png": "/portfolio/static/media/avatar_final.cb1be720cf64caf46ee8.png",
     "static/media/arkana668.png": "/portfolio/static/media/arkana668.4297fc59865bd467cf34.png",
     "static/media/flores-eli668.png": "/portfolio/static/media/flores-eli668.1519d44c42ebe0ba4b6c.png",
+    "static/media/tela-blasted.png": "/portfolio/static/media/tela-blasted.0c95cd9b6104d08be391.png",
     "static/media/pvetor.png": "/portfolio/static/media/pvetor.fc4a5c4bf3ad7b7a00d1.png",
     "static/media/perfil-vr.png": "/portfolio/static/media/perfil-vr.47a9be41d0c0847552ea.png",
     "static/media/flores-eli.png": "/portfolio/static/media/flores-eli.cf626f5093fc1dea573f.png",
     "static/media/arkana-bikes.png": "/portfolio/static/media/arkana-bikes.076d9f86d6961b775942.png",
     "static/media/meds.png": "/portfolio/static/media/meds.921d7a4ba65f3d909bb0.png",
     "index.html": "/portfolio/index.html",
-    "main.747c7871.css.map": "/portfolio/static/css/main.747c7871.css.map",
-    "main.c3a53ff4.js.map": "/portfolio/static/js/main.c3a53ff4.js.map"
+    "main.c8188b67.css.map": "/portfolio/static/css/main.c8188b67.css.map",
+    "main.1b73cf65.js.map": "/portfolio/static/js/main.1b73cf65.js.map"
   },
   "entrypoints": [
-    "static/css/main.747c7871.css",
-    "static/js/main.c3a53ff4.js"
+    "static/css/main.c8188b67.css",
+    "static/js/main.1b73cf65.js"
   ]
 }
