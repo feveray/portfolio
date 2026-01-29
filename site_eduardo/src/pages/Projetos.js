@@ -35,7 +35,7 @@ export default function Projetos() {
       </header>
 
       <section className="py-16 px-4 bg-neutral-light min-h-screen">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap gap-4 mb-8">
             <button
               className={`px-4 py-2 rounded ${aba === 'uxui' ? 'bg-[#51572c] text-white' : 'bg-neutral-light text-[#51572c]'}`}

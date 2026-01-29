@@ -15,7 +15,7 @@ export default function Contact() {
 
       <main className="flex-1">
         <section id="contato" className="py-12 px-4 bg-neutral-light h-full">
-          <div className="max-w-4xl mx-auto text-left">
+          <div className="max-w-3xl mx-auto text-left">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="md:w-1/2 w-full mb-8 md:mb-0 flex flex-col justify-center">
                 <p className="text-neutral-dark mb-8">Preencha o formulário abaixo para entrar em contato ou utilize as redes sociais:</p>

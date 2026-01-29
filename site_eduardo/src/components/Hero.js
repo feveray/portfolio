@@ -38,32 +38,37 @@ export default function Hero() {
 
       {/* Section Mini Sobre */}
       <section id="mini-sobre" className="py-16 px-4 bg-neutral-light">
-        <div className="max-w-4xl mx-auto text-left">
+        <div className="max-w-2xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Sobre mim</h2>
           <p className="text-neutral-dark mb-3 text-left">
             Designer com formação em Design de Web, atuação em UI/UX e na construção de interfaces front-end. 
             Comprometido com experiências digitais que reflitam diversidade e representatividade, busco transformar necessidades reais em interfaces claras, funcionais e centradas na relação entre usuário e produto.{' '}
             <Link to="/sobre" className="text-secondary font-semibold hover:text-primary ml-1">Veja mais</Link>
           </p>
-          <p className="font-bold mb-8 text-left text-neutral-medium">
-            <a href={`${process.env.PUBLIC_URL}/cv_eduardo.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir currículo em PDF em nova aba'>● Visualizar currículo em PDF ●</a>
-          </p>
 
 
-        <section className="max-w-4xl w-full mb-4 pl-4 pr-4 ml-2">
+        <section className="max-w-2xl w-full mt-8 mb-6 pl-4 pr-4 ">
           <CardTags />
         </section>
+
+          <p className="font-bold mb-8 text-center text-neutral-medium">
+            <a href={`${process.env.PUBLIC_URL}/cv_eduardo.pdf`} target="_blank" rel="noopener noreferrer" aria-label='Abrir currículo em PDF em nova aba'>● Visualizar currículo em PDF ●</a>
+          </p>
 
         </div>
       </section>
 
       {/* Section Intro Projetos */}
-      <section id="intro-projetos" className="py-16 px-4 bg-primary">
-        <div className="max-w-4xl mx-auto text-left">
+      <section id="intro-projetos" className="py-16 px-4 relative overflow-hidden bg-gradient-to-br from-primary/50 via-primary/40 to-secondary/50 animate-gradient-x">
+        <div className="absolute inset-0 opacity-22">
+          <div className="absolute -top-20 -left-20 w-80 h-80 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+          <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-neutral-light rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-700"></div>
+        </div>
+        <div className="max-w-2xl mx-auto text-left relative z-10">
+          <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-4 text-left">Projetos</h2>
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
 
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-0">
-
-            <div className="md:w-1/2 w-full">
+            <div className="md:w-2/3 w-full md:pr-6">
               <p className="text-dark mb-4">
                 Aqui estão alguns dos meus projetos mais recentes, onde busquei aplicar as melhores práticas de design e desenvolvimento.
               </p>
@@ -83,7 +88,7 @@ export default function Hero() {
 
       {/* Section Contato */}
         <section id="contato" className="py-16 px-4 bg-neutral-light">
-        <div className="max-w-4xl mx-auto text-left">
+        <div className="max-w-2xl mx-auto text-left">
           <h2 className="drop-shadow font-title text-3xl font-bold text-[#51572c] mb-8 text-left">Contato</h2>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/2 w-full mb-8 md:mb-0 flex flex-col justify-center">
@@ -101,7 +106,7 @@ export default function Hero() {
                 <div className="flex items-start gap-3">
                   <FaWhatsapp className="text-[#51572c] w-5 h-5 mt-1" aria-hidden="true" />
                   <div>
-                    <a href="https://wa.me/5511992736662" target="_blank" rel="noopener noreferrer" aria-label='Abrir chat no WhatsApp com +55 11 99273 6662'>
+                    <a href="https://wa.me/5511992736662" target="_blank" rel="noopener noreferrer" aria-label='Abrir chat no na com +55 11 99273 6662'>
                     <h4 className="font-title font-bold text-[#51572c] text-left">Whatsapp:</h4>
                     <p className="text-neutral-dark">+55 11 99273-6662</p>
                     </a>
@@ -121,7 +126,8 @@ export default function Hero() {
                       <FaLinkedin /> <span className="text-base">LinkedIn</span>
                     </a>
                     <a href="https://github.com/feveray" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2" aria-label='Abrir perfil do GitHub de Eduardo de Luna em nova aba'>
-                      <FaGithub /> <span className="text-base">GitHub</span>
+
+ <FaGithub /> <span className="text-base">GitHub</span>
                     </a>
                     <a href="https://instagram.com/drako" target="_blank" rel="noopener noreferrer" className="text-neutral-medium hover:text-secondary flex items-center gap-2" aria-label='Abrir perfil do Instagram de Eduardo de Luna em nova aba'>
                       <FaInstagram /> <span className="text-base">Instagram</span>
@@ -134,7 +140,7 @@ export default function Hero() {
 
             </div>
 
-            <div className="md:w-1/2 w-full">
+            <div className="mded-1/2 w-full">
               <EmailForm />
             </div>
 

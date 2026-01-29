@@ -17,7 +17,7 @@ export default function SobreMim() {
       </header>
         
       <main className="flex flex-col items-center py-8 px-4">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-8 w-full max-w-4xl">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-8 w-full max-w-3xl">
           <div className="flex flex-col items-center ml-0 md:ml-4">
             <img src={profileImg} alt="Eduardo de Luna" className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-primary object-cover shadow-lg mb-4" />
             <div className="flex gap-4 mb-6 justify-center">
@@ -43,11 +43,11 @@ export default function SobreMim() {
           </section>
         </div>
 
-        <section className="max-w-4xl w-full mb-8 pl-4 pr-4 ml-2">
+        <section className="max-w-3xl w-full mb-8 pl-4 pr-4 ml-2">
             <CardTags />
         </section>
 
-        <section className="max-w-4xl w-full mt-8 mb-4 pl-4 pr-4 ml-2">
+        <section className="max-w-3xl w-full mt-8 mb-4 pl-4 pr-4 ml-2">
           <h3 className="text-xl font-bold text-secondary mb-2">Formação</h3>
           <ul className="text-neutral-dark mb-4">
             <li><span className="font-bold">▻ Banco de Dados - UniBTA •</span> (em andamento)</li>
@@ -58,7 +58,7 @@ export default function SobreMim() {
           </ul>
         </section>
         
-        <section className="max-w-4xl w-full mt-4 mb-8 pl-4 pr-4 ml-2">
+        <section className="max-w-3xl w-full mt-4 mb-8 pl-4 pr-4 ml-2">
           <h3 className="text-xl font-bold text-secondary mb-2">Experiência</h3>
           <ul className="text-neutral-dark">
             <li><span className="font-bold">▻ Freelancer - Produtor de eventos/conteúdo</span><br />Atuação multidisciplinar em projetos de comunicação e eventos, com foco em identidade visual, conteúdo digital, social media e produção audiovisual. Desenvolvimento de peças gráficas, edição de imagens e vídeos, e apoioestratégico à divulgação de projetos culturais.</li>

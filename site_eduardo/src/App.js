@@ -10,6 +10,7 @@ import SobreMim from './pages/SobreMim';
 import Portfolio from './components/Projetos_inicio';
 import Projetos from './pages/Projetos';
 import ProjectDetail from './pages/ProjectDetail';
+import PostDetail from './pages/PostDetail';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -31,6 +32,7 @@ function App() {
           <Route path="/projetos" element={<Projetos />} />
           <Route path="/projetos/:slug" element={<ProjectDetail />} />
           <Route path="/gerador-qr" element={<GeradorQR />} />
+          <Route path="/blog/:slug" element={<PostDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/calculadora-web" element={<CalculadoraJS />} />

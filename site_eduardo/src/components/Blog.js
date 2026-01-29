@@ -1,21 +1,14 @@
-// src/pages/Blog.js
+// src/pages/Blog.js - versão com imagens
 import React, { useState, useEffect } from 'react';
-import BackToTopButton from '../components/BackToTopButton'; // Importe conforme seus outros arquivos
+import BackToTopButton from '../components/BackToTopButton';
 
-const WORDPRESS_API_URL = 'https://SEU_DOMINIO_DO_BLOG/wp-json/wp/v2/posts'; // SUBSTITUA AQUI!
+const WORDPRESS_API_URL = 'https://public-api.wordpress.com/wp/v2/sites/roadtoluna.wordpress.com/posts?per_page=3&_embed';
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Se a URL ainda for o placeholder, não tentamos buscar (evita erros no console)
-    if (!WORDPRESS_API_URL || WORDPRESS_API_URL.includes('SEU_DOMINIO_DO_BLOG')) {
-      setLoading(false);
-      return;
-    }
-
-    // Função para buscar os posts
     fetch(WORDPRESS_API_URL)
       .then(response => response.json())
       .then(data => {
@@ -23,7 +16,7 @@ export default function Blog() {
         setLoading(false);
       })
       .catch(error => {
-        console.error('Erro ao buscar posts:', error);
+        console.error('Erro:', error);
         setLoading(false);
       });
   }, []);
@@ -34,7 +27,7 @@ export default function Blog() {
         <h1 className="sombra-personalizada text-4xl font-[Comfortaa] font-bold text-[#341539]">BLOG</h1>
       </header>
 
-      <main className="flex flex-col items-center py-8 px-4 max-w-4xl mx-auto flex-1">
+      <main className="flex flex-col items-center py-8 px-4 max-w-3xl mx-auto flex-1">
         {loading && <p>Carregando posts...</p>}
         {!loading && posts.length === 0 && <p>Nenhum post encontrado.</p>}
         
@@ -57,9 +50,13 @@ export default function Blog() {
             
             {/* Link para o post completo */}
             {/* Você pode criar uma rota dinâmica como /blog/:slug para o post completo */}
-            <a href={`/blog/${post.slug}`} className="text-secondary font-semibold mt-4 inline-block hover:text-primary transition-colors duration-200">
-              Leia Mais &rarr;
-            </a>
+          <a 
+            href={`/blog/${post.slug}`} 
+            className="text-secondary font-semibold mt-4 inline-block hover:text-primary transition-colors duration-200"
+          >
+            Leia Mais →
+          </a>
+
           </article>
         ))}
       </main>
