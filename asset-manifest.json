@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c8188b67.css",
-    "main.js": "/portfolio/static/js/main.07f34f53.js",
-    "static/media/perfile.png": "/portfolio/static/media/perfile.4c30b708188554621641.png",
+    "main.css": "/portfolio/static/css/main.b4ac2635.css",
+    "main.js": "/portfolio/static/js/main.d5cf2eeb.js",
+    "static/media/perfile.png": "/portfolio/static/media/perfile.c1555401b2cfc398675e.png",
     "static/media/prototipo-alt.png": "/portfolio/static/media/prototipo-alt.c170a737c61bb14a8c20.png",
     "static/media/project.png": "/portfolio/static/media/project.f9d647778c25d9cc4b5f.png",
     "static/media/telas-altafid.png": "/portfolio/static/media/telas-altafid.a30c5c3ed5eae48b1685.png",
@@ -22,11 +22,11 @@
     "static/media/arkana-bikes.png": "/portfolio/static/media/arkana-bikes.076d9f86d6961b775942.png",
     "static/media/meds.png": "/portfolio/static/media/meds.921d7a4ba65f3d909bb0.png",
     "index.html": "/portfolio/index.html",
-    "main.c8188b67.css.map": "/portfolio/static/css/main.c8188b67.css.map",
-    "main.07f34f53.js.map": "/portfolio/static/js/main.07f34f53.js.map"
+    "main.b4ac2635.css.map": "/portfolio/static/css/main.b4ac2635.css.map",
+    "main.d5cf2eeb.js.map": "/portfolio/static/js/main.d5cf2eeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8188b67.css",
-    "static/js/main.07f34f53.js"
+    "static/css/main.b4ac2635.css",
+    "static/js/main.d5cf2eeb.js"
   ]
 }
